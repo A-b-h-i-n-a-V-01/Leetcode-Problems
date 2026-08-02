@@ -4,7 +4,6 @@ class Solution(object):
         large=-1
         for i in range(0,len(arr)-1):
             for k in range(i+1,len(arr)):
-                no=int(arr[i])*int(arr[k])
-                if no > large:
-                    large=no
+                if int(arr[i])*int(arr[k]) > large:
+                    large=int(arr[i])*int(arr[k])
         return large
